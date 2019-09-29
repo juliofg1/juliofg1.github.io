@@ -1,2 +1,3 @@
 # juliofg1.github.io
-mi primera pagina web
+pagina de desarrollo profesional
+
