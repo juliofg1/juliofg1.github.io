@@ -1,125 +1,98 @@
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-/* Custom page header */
-.header {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
-}
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-}
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
-
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-}
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-}
-
-.bib tr td:first-child {
-  display: none
-}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+	font-size:22px;
+	line-height: 32px;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	}
+.toggle,
+[id^=drop] {
+	display: none;
 }
-
-.navbar {
-  margin-bottom: 20px;
+nav { 
+	margin:0;
+	padding: 0;
+	background-color: #01579B;
 }
-
-.header-bar {
-  display: block;
-  padding: 5px 10px;
-  color: #fff;
-  text-align: left;
-  background-color: #848482;
+#logo {
+	display: block;
+	padding: 10px 0 0 30px;
+	float: left;
 }
-
-.header-bar .address {
-  color: #B6B6B4;
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
 }
-
-.float-right {
-  float: right;
-  margin: 10px 10px 10px 10px
+nav ul {
+	float: right;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
 }
-
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	float: left;
 }
-
-@media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-    float: left;
-  }
-  .col-sm-2 {
-    width: 16.66666667%;
-  }
+nav a {
+	display:block;
+	padding:14px 20px;	
+	color:#FFF;
+	font-size:17px;
+	text-decoration:none;
+}
+nav a:hover { 
+	background-color: #3378af; 
+}
+img.banner {
+	width: 100%;
+}
+@media (max-width :768px) {
+	#logo {
+		display: block;
+		padding: 20px 0 10px 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+	nav {
+		margin: 0;
+	}
+	nav ul {
+		float: left;
+		width: 100%;
+	}
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+	.toggle {
+		display: block;
+		background-color: #00457c;
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+		cursor: pointer;
+	}
+	.toggle:hover {
+		background-color: #003c6c;
+	}
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+	nav a:hover{
+		background-color: #3378af;
+	}
 }
