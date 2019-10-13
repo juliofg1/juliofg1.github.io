@@ -52,7 +52,8 @@ nav a:hover {
 	background-color: #3378af; 
 }
 img.banner {
-	width: 100%;
+  width: 100%;
+   
 }
 
 @media (max-width :768px) {
