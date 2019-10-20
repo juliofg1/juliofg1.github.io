@@ -2,6 +2,7 @@
 
 
 
+
 body {
 
         font-size:12px;
@@ -30,7 +31,7 @@ tr{
         //        height:50%;
                 font-size:12px;
 //		text-decoration:none;
-        	border: red 1px solid;
+//        	border: red 1px solid;
 //		cursor: pointer;
 }
 td {
@@ -43,14 +44,17 @@ td {
         //        valing:top;
                 font-size:12px;
         // 		text-decoration:none;
-        	border: blue 1px solid;
+  //      	border: blue 1px solid;
         //	cursor: pointer;
 }
 p {
-                width:50%;
+                font-size:9px;
+                width:90%;
                 height:100%;
+              	border: blue 1px solid;
             //    valing:top;
-  }
+}
+
 .toggle,
 [id^=drop] {
 	display: none;
