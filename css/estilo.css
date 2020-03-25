@@ -16,6 +16,15 @@ p
         margin-bottom:90px;
         padding: 60px;
 }
+
+img
+   {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%; 
+   }
+// <img align="left|right|middle|top|bottom">
 body {
 	font-family: 'Open Sans', sans-serif;
 }
