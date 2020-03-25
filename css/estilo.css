@@ -38,14 +38,10 @@ header {
 }
 
 h1 {
-    // float: left;
-   	text-align: center;
+        float: left;
+   	
     
 }
-h1 span {
-    
-    background-color: green; 
-        }
 
 header .contenedor {
 	display: table;
@@ -100,7 +96,7 @@ footer .contenedor {
 }
 
 
-#blog h3, h4 {
+#blog h2, h3, h4 {
 	text-align: center;
 }
 
@@ -137,6 +133,7 @@ footer .contenedor {
 }
 
 #banner h2 {
+        
 	font-size: 28px;
 }
 
