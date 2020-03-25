@@ -38,8 +38,14 @@ header {
 }
 
 h1 {
-	float: left;
+     float: left;
+    // background-color: green; 
+    
 }
+h1 span {
+    
+    background-color: green; 
+        }
 
 header .contenedor {
 	display: table;
@@ -109,7 +115,7 @@ footer .contenedor {
 }
 
 #blog img {
-	width: 100%;
+        width: 100%;
 	max-width: 280px;
 }
 #banner {
