@@ -10,27 +10,10 @@
 	box-sizing: border-box;
 }
 
-p
-{
-	margin: 8px;
-        margin-bottom:90px;
-        padding: 60px;
-        font-weight: bold;
-        font-size: 20px;
-        border-style: double;
-}
-
-img
-   {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 80%; 
-   }
-// <img align="left|right|middle|top|bottom">
 body {
 	font-family: 'Open Sans', sans-serif;
 }
+
 
 header {
 	width: 100%;
@@ -45,18 +28,24 @@ header {
 }
 
 .contenedor {
-	width: 98%;
+	width: 90%;
 	margin: auto;
 }
 
+
 h1 {
+
         float: left;
-   	
-    
+}
+h5 {
+       width: 60%;     
+       float: right;
+       margin: 4%;
 }
 
 header .contenedor {
 	display: table;
+       // margin: 1px; 
 }
 
 section {
@@ -85,10 +74,12 @@ footer .contenedor {
 	font-size: 28px;
 }
 
-.sociales a {
+.sociales img {
 	color: #333;
 	text-decoration: none;
+        width: 30px;  
 }
+
 
 @media (min-width:768px) { 
 	.sociales {
@@ -108,7 +99,7 @@ footer .contenedor {
 }
 
 
-#blog h2, h3, h4 {
+#blog h3, h4, h2 {
 	text-align: center;
 }
 
@@ -119,25 +110,29 @@ footer .contenedor {
 }
 
 #blog article {
-	margin: 15px;
+	margin: 25px;
 }
 
 #blog img {
-        width: 100%;
+	width: 50%;
 	max-width: 280px;
+       	border-radius: 50%;
+	border: 7px solid #fff;
 }
 #banner {
-	margin-top: 50px;
+        text-align: center;
+        margin-top: 50px;
 	position: relative;
 }
 
 #banner img {
-	width: 100%;
+        padding: 10px;
+        width: 100%;
 	height: 100%;
 }
 
 #banner .contenedor {
-	position: absolute;
+        position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
@@ -145,7 +140,6 @@ footer .contenedor {
 }
 
 #banner h2 {
-        
 	font-size: 28px;
 }
 
@@ -180,14 +174,16 @@ footer .contenedor {
 	}
 	
 	#banner img {
-		height: auto;
-		margin-top: -100px;
+           
+                height: auto;
+		margin-top: 10px;
 	}
 }
 
 @media (min-width:1024px) { 
-	#banner img {
-		margin-top: -200px;
+    #banner img {
+                  
+		margin-top: 10px;
 	}
 }
 
@@ -240,7 +236,7 @@ header label {
 .menu {
 	position: absolute;
 	top: 50px;
-	left: 0;
+	left: 1px;
 	width: 100%;
 	height: 100vh;
 	background: rgba(51,51,51,0.9);
