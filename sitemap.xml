@@ -1,37 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://juliofg1.github.io</loc>
-    </url>
-    <url>
         <loc>https://juliofg1.github.io/</loc>
     </url>
     <url>
         <loc>https://juliofg1.github.io/img/favicon.png</loc>
     </url>
     <url>
-        <loc>https://juliofg1.github.io/css/style.css</loc>
+        <loc>https://juliofg1.github.io/“https:/juliofg1.github.io/”</loc>
     </url>
     <url>
-        <loc>https://juliofg1.github.io/img/avion.png</loc>
+        <loc>https://juliofg1.github.io/css/estilo.css</loc>
+    </url>
+    <url>
+        <loc>https://juliofg1.github.io/img/icono-menu.png</loc>
     </url>
     <url>
         <loc>https://juliofg1.github.io/img/desarrollo.png</loc>
     </url>
     <url>
+        <loc>https://juliofg1.github.io/img/mont2.png</loc>
+    </url>
+    <url>
+        <loc>https://juliofg1.github.io/img/avion.png</loc>
+    </url>
+    <url>
         <loc>https://juliofg1.github.io/img/gato.png</loc>
     </url>
     <url>
-        <loc>https://juliofg1.github.io/img/carlos5.png</loc>
+        <loc>https://juliofg1.github.io/img/mont.png</loc>
     </url>
     <url>
-        <loc>https://juliofg1.github.io/img/firetv.png</loc>
+        <loc>https://juliofg1.github.io/fonts/facebook.png</loc>
     </url>
     <url>
-        <loc>https://juliofg1.github.io/img/ilimitado.png</loc>
+        <loc>https://juliofg1.github.io/fonts/twitter.png</loc>
     </url>
     <url>
-        <loc>https://juliofg1.github.io/img/echo.png</loc>
+        <loc>https://juliofg1.github.io/fonts/camera.png</loc>
+    </url>
+    <url>
+        <loc>https://juliofg1.github.io/fonts/pinteres.png</loc>
     </url>
 </urlset>
 
