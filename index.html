@@ -102,7 +102,54 @@
         "1...",
         "2..."
        ]
+       }
+
+       <!--//BLOQUE COOKIES-->
+<div id="barraaceptacion" style="display: block;">
+    <div class="inner">
+        Solicitamos su permiso para obtener datos estadísticos de su navegación en esta web, en cumplimiento del Real 
+        Decreto-ley 13/2012. Si continúa navegando consideramos que acepta el uso de cookies.
+        <a href="javascript:void(0);" class="ok" onclick="PonerCookie();"><b>OK</b></a> | 
+        <a href="http://politicadecookies.com" target="_blank" class="info">Más información</a>
+    </div>
+</div>
+ 
+<script>
+function getCookie(c_name){
+    var c_value = document.cookie;
+    var c_start = c_value.indexOf(" " + c_name + "=");
+    if (c_start == -1){
+        c_start = c_value.indexOf(c_name + "=");
     }
+    if (c_start == -1){
+        c_value = null;
+    }else{
+        c_start = c_value.indexOf("=", c_start) + 1;
+        var c_end = c_value.indexOf(";", c_start);
+        if (c_end == -1){
+            c_end = c_value.length;
+        }
+        c_value = unescape(c_value.substring(c_start,c_end));
+    }
+    return c_value;
+}
+ 
+function setCookie(c_name,value,exdays){
+    var exdate=new Date();
+    exdate.setDate(exdate.getDate() + exdays);
+    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+    document.cookie=c_name + "=" + c_value;
+}
+ 
+if(getCookie('tiendaaviso')!="1"){
+    document.getElementById("barraaceptacion").style.display="block";
+}
+function PonerCookie(){
+    setCookie('tiendaaviso','1',365);
+    document.getElementById("barraaceptacion").style.display="none";
+}
+</script>
+<!--//FIN BLOQUE COOKIES-->
     </script>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v6.0"></script>
@@ -152,16 +199,21 @@
    <h2><i>""Opino que una buena pluma no amarga""</i></h2>
     <div class="contenedor">
       <article>
-     <a rel="nofollow" href="https://www.amazon.es/gp/product/B0754G2XWZ/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B0754G2XWZ&linkCode=as2&tag=juliofghoy-21&linkId=a4a82a87c7d2eb98b81af4cc96b13c4a">
-          <img src="img/cartier.png"  alt="firetv🥇▷ ▷•• 2020••"></a>
-          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<h5> .</h5>
+
+        <a rel="nofollow" href="https://amzn.to/2wTw6rL">
+          <img src="img/mont2.png"  alt="Bolígrafo de Mont Blanc MB 114797, COOLPIX Negro BP🥇▷ ▷•• 2020••"></a>
+<h5>Bolígrafo de Mont Blanc MB 114797, COOLPIX Negro BP
+de Montblanc
+ 4,7 de 5 estrellas    120 valoraciones | 12 preguntas respondidas</h5>
+
+ <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 </article>
 </div>
 </section>
 <div class="fb-share-button" data-href="https://juliofg1.github.io" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjuliofg1.github.io%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a></div>
 
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 
  <section id="info">
@@ -184,13 +236,15 @@
 
 <section id="blog">
    <h2><span>Las plumas, por que nos gustan</span></h2>
-    <div class="contenedor">
-      <article>
-        <a rel="nofollow" href="https://amzn.to/2wNwIyR">
-       <img src="img/firetv.png"  alt="firetv🥇▷ ▷•• 2020••"></a>
-<h5>El Fire TV Stick Basic Edition .</h5>
+  
+   <div class="contenedor">
+     <article>
+         <h5>las plumas nunca sobran .</h5>
+ <a rel="nofollow" href="https://www.amazon.es/Montblanc-106514-145-Pluma-estilogr%C3%A1fica/dp/B007GPIGBM/ref=as_li_ss_tl?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2E2OIXJEXFZAL&dchild=1&keywords=estilograficas+montblanc&qid=1585761379&s=office&sprefix=estilograficas+mont,office-products,183&sr=1-2&linkCode=ll1&tag=juliofghoy-21&linkId=4289ab1ac899c2ee2ddad220773c460a">
+ <img src="img/mont.png"  alt="Montblanc-106514-145🥇▷ ▷•• 2020••"></a>
 </article>
 </div>
+
  </section>
  
         
@@ -204,7 +258,7 @@
       </div>
       <div class="info-pet">
         <img src="img/gato.png" alt="calculo subsidio🥇▷ ▷•• 2020••">
-        <h4>calcul subsidio</h4>
+        <h4>calculo subsidio</h4>
       </div>
       
     </div>
